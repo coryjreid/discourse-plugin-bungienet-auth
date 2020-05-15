@@ -1,0 +1,21 @@
+en:
+  login:
+    authenticator_error_fetch_user_details: "Could not retrieve your user details. Do you have an active account?"
+
+  site_settings:
+    bungienet_enabled: 'Bungie.net authentication is enabled'
+    bungienet_api_key: 'Bungie.net Application API key'
+    bungienet_client_id: 'Bungie.net Application client_id'
+    bungienet_client_secret: 'Bungie.net Application client_secret'
+    bungienet_authorize_url: "Bungie.net's OAuth authorization URL"
+    bungienet_token_url: "Bungie.net's OAuth token URL"
+    bungienet_token_url_method: "Method used to fetch token from Bungie.net's OAuth token URL"
+    bungienet_callback_user_id_path: 'Path in the JSON token response to the user id (Example: Response.membershipId)'
+    bungienet_user_json_url: 'URL to fetch user details from Bungie.net (note :id and :token are replaced with the id token respectively)'
+    bungienet_user_json_url_method: "Method used to fetch user JSON from Bungie.net's user JSON URL"
+    bungienet_json_user_id_path: 'Path in the JSON user response to the user id (Example: user.id)'
+    bungienet_json_username_path: 'Path in the JSON user response to the username (Example: user.username)'
+    bungienet_json_name_path: "Path in the JSON user response to the user's full name (Example: user.name.full)"
+    bungienet_json_avatar_path: "Path in the JSON user response to the user's avatar (Example: user.avatar_url)"
+    bungienet_debug_auth: "Include rich debugging information in your logs"
+    bungienet_allow_association_change: 'Allow users to disconnect and reconnect their Discourse accounts from Bungie.net'

@@ -1,0 +1,30 @@
+login:
+  bungienet_enabled:
+    default: false
+    client: true
+  bungienet_api_key: ''
+  bungienet_client_id: ''
+  bungienet_client_secret: ''
+  bungienet_authorize_url: 'https://www.bungie.net/en/oauth/authorize'
+  bungienet_token_url: 'https://www.bungie.net/platform/app/oauth/token'
+  bungienet_token_url_method:
+    default: 'POST'
+    type: enum
+    choices:
+      - GET
+      - POST
+  bungienet_callback_user_id_path: 'membership_id'
+  bungienet_user_json_url: 'https://www.bungie.net/platform/user/getbungienetuserbyid/:id/'
+  bungienet_user_json_url_method:
+    default: 'GET'
+    type: enum
+    choices:
+      - GET
+      - POST
+  bungienet_json_user_id_path: 'Response.membershipId'
+  bungienet_json_username_path: 'Response.steamDisplayName'
+  bungienet_json_name_path: ''
+  bungienet_json_avatar_path: ''
+  bungienet_debug_auth: false
+  bungienet_allow_association_change:
+    default: false
