@@ -4,7 +4,7 @@
 # about: An OAuth 2.0 authentication plugin for Bungie.net
 # version: 0.0.1
 # authors: Cory Reid
-# url:
+# url: https://github.com/coryjreid/discourse-plugin-bungienet-auth
 
 require_dependency 'auth/oauth2_authenticator.rb'
 
@@ -25,8 +25,7 @@ class ::OmniAuth::Strategies::Bungienet < ::OmniAuth::Strategies::OAuth2
   #
   # Example: 'https://haslkdfjha.ngrok.io' + script_name + callback_path
   def callback_url
-    # Discourse.base_url_no_prefix + script_name + callback_path
-    'https://de8593cb.ngrok.io' + script_name + callback_path
+    Discourse.base_url_no_prefix + script_name + callback_path
   end
 
   def recurse(obj, keys)
